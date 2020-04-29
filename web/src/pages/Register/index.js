@@ -10,7 +10,7 @@ import logoImg from '../../assets/logo.svg'
 
 export default function Register() {
 
-  const [name, setName] = useState('');
+  const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
   const [cidade, setCidade] = useState('');
@@ -23,7 +23,7 @@ export default function Register() {
     e.preventDefault();
 
     const data = {
-      name,
+      nome,
       email,
       whatsapp,
       cidade,
@@ -63,8 +63,8 @@ export default function Register() {
         <form onSubmit={handleRegister}>
           <input
             placeholder="Nome da ONG"
-            value={name}
-            onChange={e => setName(e.target.value)}
+            value={nome}
+            onChange={e => setNome(e.target.value)}
           />
 
           <input

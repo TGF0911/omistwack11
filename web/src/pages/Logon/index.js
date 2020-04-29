@@ -19,9 +19,9 @@ export default function Logon() {
 
     try {
       const res = await api.post('sessions', {id})
-
+ 
       localStorage.setItem('ongId', id)
-      localStorage.setItem('ongName', res.data.name)
+      localStorage.setItem('ongName', res.data.nome)
 
 
       history.push('/profile')
